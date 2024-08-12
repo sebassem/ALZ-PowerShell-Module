@@ -51,7 +51,7 @@ function New-FolderStructure {
             }
 
         } else {
-            $releaseTag = Get-GithubRelease -githubRepoUrl $url -targetDirectory $targetDirectory -moduleSourceFolder $sourceFolder -moduleTargetFolder $targetFolder -release $release -releaseArtifactName $releaseArtifactName
+            $releaseTag = Get-GitHubRelease -githubRepoUrl $url -targetDirectory $targetDirectory -moduleSourceFolder $sourceFolder -moduleTargetFolder $targetFolder -Release $release -releaseArtifactName $releaseArtifactName
             $path = Join-Path $targetDirectory $targetFolder $releaseTag
         }
 
